@@ -19,6 +19,13 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/9d505bb5-090a-4c6f-9a1e-ca9823c87f70)
 
+- Verify the source directory
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/6c7fe9e1-bcc3-4e61-b7aa-988e7fd36d89)
+
+
+### Run test some file 
+
 - Open this file `test.py` and replace `X-RapidAPI-Key`. 
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/f4c88381-1484-40cc-8cec-479f62bfb0f0)
@@ -36,4 +43,18 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/479035bb-19ef-4ab6-acb7-3a282e1fb972)
 
-  
+### Run application
+- Go to this file `app.py` and change `RapidAPI key`
+- Run this command `python ./app.py`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/5b0d9af3-1ab5-47cf-bf77-abc05f7838b4)
+
+- Use it to see the application on port 8080
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/1c0e8e0e-7437-4f25-a06d-f154344926ce)
+
+- You will see the application
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/16ca8f84-bc5c-4d80-9e1f-ea604560c1d9)
+
+
