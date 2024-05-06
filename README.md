@@ -227,5 +227,6 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/337ee9f8-866d-4448-8913-67b92fb9f10e)
 
+## Link demo: 
+https://www.youtube.com/watch?v=ow9OgMuFW18
 
-  
