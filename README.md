@@ -138,3 +138,37 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
 - Waiting for minutes to complete
 
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/71a38106-f529-44c3-b7aa-79c9ef571205)
+
+- Find this URL end-point
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/74e861ea-bf47-493e-9250-3b2d23853245)
+
+- Verify the application running on autopilot cluster on GKE
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/ebc011f9-3a43-4a91-b8d9-5763c45e1b54)
+
+### Build CI/CD pipepline to build conatainer and runnning on GKE autopilot
+- Create new private repository with name `real-time-crick-score-app`
+- Go to `Settings` -> `Developer Settings` -> Generate new token (Classic) with name `crick-app-demo` and save this token
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/b911ec93-8298-4a8d-8a50-35594c785806)
+
+- Go back to cloud shell create new folder and move to this foler and do this command. Replace with username github repo and this token that just save in previous step
+
+  ```
+  git clone https://<your_username>:<your_personal_access_token>@github.com/hieunguyen0202/real-time-crick-score-app.git
+
+  ```
+- After that move everything related to source code application into this folder
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/aa8b0314-43d0-4334-ab7d-e1f166f927ce)
+
+- Do some command to push this source code to github
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/820cf438-5b95-45c2-97c5-7417d0631072)
+
+- Verify this source code
+  
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/7e42d2d7-9552-42ec-87a0-1d39c006d239)
+
