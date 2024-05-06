@@ -57,4 +57,40 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/16ca8f84-bc5c-4d80-9e1f-ea604560c1d9)
 
+### Setup kubernetes cluster
+- Make sure to enable Kubernetes Engine API
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/43f2b682-c85f-46e3-9a17-7d10b14bd258)
+
+- Go to [Kubernetes Engine](https://console.cloud.google.com/kubernetes/list/overview?hl=vi&project=cricket-score-app-on-gke) on GCP console
+- Click on `Create` cluster on Auto pilot mode
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/d5ee720e-c5fa-4615-85fd-eb13a2dfca51)
+
+- Make everything by default and click on `Submit`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/94f6c111-844c-4d46-9a13-0a5de5aa6ef4)
+
+- Waiting for miniutes to spin up the new cluster
+
+
+### Convert application to container
+- Let's create [Artifact repository](https://console.cloud.google.com/artifacts?referrer=search&hl=vi&project=cricket-score-app-on-gke) on GCP to store docker contianer image
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/1c16fbc9-e6c6-458b-a9fa-e826be4ad2de)
+
+- Give a name `my-repo` and set region `us-central1` and click on `Create`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/4b3dc58f-3b0f-45da-a129-944a72baf8b4)
+
+- Go to the cloud shell, verify the `Dockerfile` (Docker has been installed on cloud shell by default)
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/a5e98cbb-0d19-46ea-8938-608a7ca873e5)
+
+- Run this command to build the image `docker build -t crick-app .`
+- Check the image `docker image`
+- Run container on port 8080 `docker run -p 8080:8080 crick-app`
+
+
+  
 
