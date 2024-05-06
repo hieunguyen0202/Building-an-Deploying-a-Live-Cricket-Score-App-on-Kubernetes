@@ -1,5 +1,6 @@
 # Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes
 ## Architect Diagram
+![Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes drawio](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/77d3c4de-4425-4179-abdf-66e1f70a013c)
 
 ## Implementation
 ### Setup environment to develop code on Cloud Shell
