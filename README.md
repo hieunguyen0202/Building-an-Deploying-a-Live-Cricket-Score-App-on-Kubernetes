@@ -73,6 +73,7 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
 - Waiting for miniutes to spin up the new cluster
 
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/6bcbbc8b-1304-4c0d-bf2a-546fc4e8b3d0)
 
 ### Convert application to container
 - Let's create [Artifact repository](https://console.cloud.google.com/artifacts?referrer=search&hl=vi&project=cricket-score-app-on-gke) on GCP to store docker contianer image
@@ -88,9 +89,22 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/a5e98cbb-0d19-46ea-8938-608a7ca873e5)
 
 - Run this command to build the image `docker build -t crick-app .`
-- Check the image `docker image`
-- Run container on port 8080 `docker run -p 8080:8080 crick-app`
+- Check the image `docker images`
 
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/a59bc081-2c73-4abe-9e09-2d8b79c67574)
 
-  
+- Run container on port 8080 `docker run -p 8080:8080 crick-app` and press `Ctrl + C` to kill process
 
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/248b0082-f1f2-40fc-89a9-fa72b9f7f08e)
+
+### Upload container to repository
+- Add tag for container image
+
+  ```
+  docker tag crick-app us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app:v1
+  ```
+- Push this container image
+
+  ```
+  docker push us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app:v1
+  ```
