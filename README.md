@@ -190,8 +190,42 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/c66dfe9c-bdd4-46e7-80a9-874190446030)
 
+- Verify URL endpoint
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/05208c30-f44d-437e-9d75-b002cc2f442b)
+
+
+### Automate build trigger
+- Go to this `crick-app` workloads and choose this option `Action -> Automated deployment`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/28542c28-5df9-443d-bccb-b956eb7ed4fd)
 
   
+- Setup this info
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/520eb082-8a7f-4d3b-8489-badd530cc8e3)
+
+- Make sure to update `/kubernetes/app.yaml` that Google recommendation
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/f23e1ab6-4fed-4ecf-a429-190198b771a5)
+
+- You can go to the cloud build to check the result
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/3b90412d-b5ae-40d6-a2fa-96d0feab46b7)
+
+
+### Test 
+- Go to the source code and change color to `green`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/8d1823ab-3610-408a-b1df-2d03dc5eb6bb)
+
+- Commit to github and after that go to Cloud build on GCP to see and check the log
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/a8a69fd2-b851-4761-bfea-57ce53ea5597)
+
+- Waiting for minutes and go back and check enpoint URL
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/337ee9f8-866d-4448-8913-67b92fb9f10e)
 
 
   
