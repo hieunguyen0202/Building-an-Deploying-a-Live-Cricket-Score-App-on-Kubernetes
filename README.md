@@ -101,10 +101,40 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
 - Add tag for container image
 
   ```
-  docker tag crick-app us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app:v1
+  docker tag crick-app us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app
   ```
 - Push this container image
 
   ```
-  docker push us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app:v1
+  docker push us-central1-docker.pkg.dev/cricket-score-app-on-gke/my-repo/crick-app
   ```
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/5a48189e-1c27-4fce-924a-265ed5f66d83)
+
+- Go back to Artifact Repository to verify the new image
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/c512733d-ffef-4633-9cb2-ea2dd2f793fe)
+
+### Deplot workload on autopilot cluster
+- Click on `autopilot-cluster-1` cluster and click `Deploy`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/8cf62b1f-e23c-4767-8d62-64cc23ae6021)
+
+- Choose existing container image and click on select
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/e913d098-245a-4771-bdc9-cacc8cd4b6a6)
+
+- Choose this container image and click `Done` and `Continue`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/b63e4c89-e00f-48b0-b104-2bfc7ce939ef)
+
+- Next, change the name `crick-app` and click `Continue`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/b2183136-aa71-4825-9b68-ab5538a3a8e9)
+
+- Check on `Expose deployment as a new service` and chage port `8080` like this and click `Deploy`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/58ebd7b5-6350-4696-9241-a4bc579ecec5)
+
+- Waiting for minutes to complete
+
