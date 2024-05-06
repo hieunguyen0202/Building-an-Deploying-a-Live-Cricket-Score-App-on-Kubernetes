@@ -172,3 +172,26 @@ git clone https://github.com/vishal-bulbule/real-time-crick-score-app.git
   
   ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/7e42d2d7-9552-42ec-87a0-1d39c006d239)
 
+- Go back to autopilot cluster and detele the workload
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/760e02e4-1755-4aeb-ba80-a90385e9ef69)
+
+- Go to `autopilot-cluster-1` and click on `Deploy` again and choose `New container image`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/4ee1def3-7d43-4206-b34b-bbf1d036d533)
+
+- Make sure to enable some API `Cloud Source Repositories API` and `Cloud Build API`
+- Next click on `Authenticate` and login with username and password for your github account and fill this infomation and click `Continue`
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/d0a87ec8-4700-4217-85cd-24e3d9f2cf03)
+
+- Change name `crick-app` and click on `Continue`
+- Expose for service and click on Deploy
+
+  ![image](https://github.com/hieunguyen0202/Building-an-Deploying-a-Live-Cricket-Score-App-on-Kubernetes/assets/98166568/c66dfe9c-bdd4-46e7-80a9-874190446030)
+
+
+  
+
+
+  
